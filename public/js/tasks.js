@@ -3,7 +3,7 @@ class TaskManager {
         this.taskForm = $('#taskForm');
         this.taskList = $('.task-list');
         this.showTaskFormButton = $('#showTaskForm');
-        this.editingTaskId = null; // Armazena o ID da task que está sendo editada
+        this.editingTaskId = null;
         this.bindEvents();
         this.fetchTasks();
     }
@@ -23,7 +23,7 @@ class TaskManager {
     async fetchTasks() {
         try {
             const response = await $.ajax({
-                url: '/api/tasks', // Use a nova rota que retorna JSON
+                url: '/api/tasks',
                 method: 'GET'
             });
             this.renderTasks(response);
