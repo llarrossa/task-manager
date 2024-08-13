@@ -1,0 +1,26 @@
+.delete-task {
+	float: right;
+	border: none;
+	background: none;
+}
+
+.delete-task:hover {
+	background: none;
+}
+
+.delete-task i {
+	color: red;
+}
+
+.edit-task {
+	border: none;
+	background: none;
+}
+
+.edit-task:hover {
+	background: none;
+}
+
+.edit-task i {
+	color: #6c757d;
+}
